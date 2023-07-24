@@ -1,7 +1,183 @@
-.nav{
+/* Reset default styles */
+body, h1, h2, p, ul, li, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  background-color: #333;
   padding: 20px;
+  color: #fff;
+}
+
+.navbar {
   display: flex;
-  flex-direction: row;
-  flood-color: aqua;
-  color:black
+  justify-content: center;
+}
+.navbar{
+       background-color: #f5f5f5;
+       color: #333;
+       padding: 20px;
+       display: flex;
+       justify-content: space-between;
+   }
+   .navbar a{
+       color: #333;
+       text-decoration: none;
+       margin-right: 10px;
+       font-size: 18px;
+       transition: color 0.3s ease;
+   }
+   .navbar a hover{
+       color: #ffcc00;
+   }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  background-image: url("/home/emmanuelcollins/CODE/Web_App_prog/Hass_Ovacado/images/avo-5.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  text-align: center;
+  color: #fff;
+}
+
+.text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+.about,
+.benefits,
+.join,
+.contact {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.about h2,
+.benefits h2,
+.join h2,
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about ul,
+.benefits ul,
+.join ul {
+  list-style: disc;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.join .cta-button,
+.contact .submit-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.join .cta-button:hover,
+.contact .submit-button:hover {
+  background-color: #555;
+}
+ .contact {
+    max-width: 600px;
+    margin: 0 auto;
   }
+  
+  .contact h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.image1{
+  background-image: url("images/avo-5.jpg");
+}

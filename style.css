@@ -171,3 +171,15 @@ body {
   padding: 20px;
   text-align: center;
 }
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.text1{
+  float: left;
+}
+.text2{
+  float: right;
+}

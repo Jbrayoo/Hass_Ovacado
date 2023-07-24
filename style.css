@@ -65,8 +65,9 @@ body {
   width : 50vw;
 }
 .image1{
-  height: 516px;
+  height: 500px;
   width : 50vw;
+  object-fit: cover;
 }
 
 .text {
@@ -169,7 +170,4 @@ body {
   color: #fff;
   padding: 20px;
   text-align: center;
-}
-.image1{
-  background-image: url("images/avo-5.jpg");
 }

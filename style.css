@@ -166,7 +166,7 @@ body {
   }
 .footer {
   background-color: #333;
-  color: #fff;
+  color: #c7afaf;
   padding: 20px;
   text-align: center;
 }
@@ -181,4 +181,13 @@ body {
 }
 .text2{
   float: right;
+}
+.image2{
+  float: right;
+  align-content: center;
+}
+.hey{
+  border: solid red;
+  height: 60vh;
+  width: 100vw;
 }

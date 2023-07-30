@@ -7,7 +7,8 @@ body, h1, h2, p, ul, li, form, input, textarea, button {
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #333;
 }
 
 .header {
@@ -17,39 +18,23 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: center;
-}
-.navbar{
-       background-color: #f5f5f5;
-       color: #333;
-       padding: 20px;
-       display: flex;
-       justify-content: space-between;
-   }
-   .navbar a{
-       color: #333;
-       text-decoration: none;
-       margin-right: 10px;
-       font-size: 18px;
-       transition: color 0.3s ease;
-   }
-   .navbar a hover{
-       color: #ffcc00;
-   }
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin: 0 10px;
-}
-
-.nav-links li a {
-  text-decoration: none;
+  background-color: #32a852; /* Green theme */
   color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
 }
 
 .hero {
@@ -58,20 +43,12 @@ body {
   height: 500px;
   display: flex;
   justify-content: center;
-}
-.text{
-  height: 516px;
-  width : 50vw;
-}
-.image1{
-  height: 500px;
-  width : 50vw;
-  object-fit: cover;
+  align-items: center; /* Center the content vertically */
 }
 
 .text {
+  max-width: 500px;
   text-align: center;
-  color: #fff;
 }
 
 .text h1 {
@@ -84,110 +61,130 @@ body {
   margin-bottom: 30px;
 }
 
-.cta-button {
+.cta-button,
+.submit-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #32a852; /* Green theme */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
 }
 
-.cta-button:hover {
-  background-color: #555;
+.cta-button:hover,
+.submit-button:hover {
+  background-color: #2c923f; /* Darker shade of green on hover */
 }
 
+.about,
+.join {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+}
 
-.about ul,
-.benefits ul,
-.join ul {
-  list-style: disc;
-  margin-left: 40px;
+.text1,
+.text2 {
+  flex-basis: 48%;
+}
+
+.text1 h2,
+.text2 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text1 ul,
+.text2 ul {
+  margin-left: 20px;
+}
+
+.image1,
+.image2 {
+  flex-basis: 48%;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.image1 img,
+.image2 img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.contact h2 {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
-.join .cta-button,
-.contact .submit-button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+.contact p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-.join .cta-button:hover,
-.contact .submit-button:hover {
-  background-color: #555;
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }
- .contact {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .contact p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  #contact-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  input,
-  textarea {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #32a852; /* Green theme */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2c923f; /* Darker shade of green on hover */
+}
+
 .footer {
   background-color: #333;
   color: #c7afaf;
   padding: 20px;
   text-align: center;
 }
-.about{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+/* Add styles for the pop-up message */
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #32a852; /* Green theme */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
 
-}
-.text1{
-  float: left;
-}
-.text2{
-  float: right;
-}
-.image2{
-  float: right;
-  align-content: center;
-}
-.hey{
-  border: solid red;
-  height: 60vh;
-  width: 100vw;
-}
